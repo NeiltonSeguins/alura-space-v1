@@ -4,9 +4,9 @@ import fotosPopulares from "./fotos-populares.json";
 
 export default function Populares() {
   return (
-    <aside className={style.aside}>
+    <aside className={style.populares}>
       <h2>Populares</h2>
-      <ul className={style.aside__imagens}>
+      <ul className={style.populares__imagens}>
         {fotosPopulares.map((foto) => {
           return (
             <li key={foto.id}>

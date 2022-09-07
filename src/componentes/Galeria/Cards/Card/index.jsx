@@ -2,15 +2,15 @@ import React from "react";
 import open from "./open.png";
 import like from "./favorito.png";
 
-export default function Card({ item, styles }) {
+export default function Card({ item, style }) {
   return (
-    <li className={styles.galeria__card}>
+    <li className={style.galeria__card}>
       <img
-        className={styles.galeria__imagem}
+        className={style.galeria__imagem}
         src={item.imagem}
         alt={item.titulo}
       />
-      <p className={styles.galeria__descricao}>{item.titulo}</p>
+      <p className={style.galeria__descricao}>{item.titulo}</p>
       <div>
         <p>{item.creditos}</p>
         <span>
